@@ -14,7 +14,7 @@ Template has been included in the latest Codeigniter
 
 
 
-#Credits
+# Credits
 
 [Codeigniter](http://codeigniter.com)
 
