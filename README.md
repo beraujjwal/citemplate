@@ -11,4 +11,6 @@ Template has been included in the latest Codeigniter
 
   - Sample template "Admin" has included
   - Working Example in **Welcome* Controller
+
+
 Powered By **[TSD](https://thesoulofdesign.com)**
