@@ -14,5 +14,8 @@ Template has been included in the latest Codeigniter
 
 
 [Codeigniter](http://codeigniter.com)
+
 [CI Simplicity](https://www.grocerycrud.com/codeigniter-simplicity)
+
+
 Powered By **[TSD](https://thesoulofdesign.com)**
