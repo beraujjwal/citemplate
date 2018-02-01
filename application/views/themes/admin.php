@@ -89,13 +89,13 @@
 <body class="hold-transition skin-blue sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
-  <?php echo $this->load->get_section('header');?>
+  <?php echo $this->output->get_section('header');?>
   
 
   <!-- =============================================== -->
 
   <!-- Left side column. contains the sidebar -->
-  <?php echo $this->load->get_section('sidebar');?>
+  <?php echo $this->output->get_section('sidebar');?>
   
 
   <!-- =============================================== -->
@@ -103,7 +103,7 @@
   <!-- Content Wrapper. Contains page content -->
     <?php echo $output;?>
   <!-- /.content-wrapper -->
-   <?php echo $this->load->get_section('footer');?>
+   <?php echo $this->output->get_section('footer');?>
   
 
   <!-- Add the sidebar's background. This div must be placed

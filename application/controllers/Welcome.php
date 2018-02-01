@@ -21,9 +21,9 @@ class Welcome extends CI_Controller {
 
 	function __construct(){
 		parent::__construct();
-		$this->load->section('header','welcome/header');
-		$this->load->section('sidebar','welcome/sidebar');
-		$this->load->section('footer','welcome/footer');
+		$this->output->section('header','welcome/header');
+		$this->output->section('sidebar','welcome/sidebar');
+		$this->output->section('footer','welcome/footer');
 		$this->output->set_title('Theism Admin');
 		$this->output->set_template('admin');
 	}
@@ -38,9 +38,9 @@ class Welcome extends CI_Controller {
 
 	public function table(){
 		$this->output->append_title('Table');
-		$this->load->css('assets/themes/admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css');
-		$this->load->js('assets/themes/admin/bower_components/datatables.net/js/jquery.dataTables.min.js');
-		$this->load->js('assets/themes/admin/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js');
+		$this->output->css('assets/themes/admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css');
+		$this->output->js('assets/themes/admin/bower_components/datatables.net/js/jquery.dataTables.min.js');
+		$this->output->js('assets/themes/admin/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js');
 		$this->load->view('welcome/sample_table');
 
 	}
