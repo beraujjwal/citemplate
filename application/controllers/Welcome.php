@@ -24,7 +24,7 @@ class Welcome extends CI_Controller {
 		$this->output->section('header','welcome/header');
 		$this->output->section('sidebar','welcome/sidebar');
 		$this->output->section('footer','welcome/footer');
-		$this->output->set_title('Theism Admin');
+		$this->output->set_title('TSD Admin');
 		$this->output->set_template('admin');
 	}
 

@@ -17,6 +17,7 @@
  * @license    	https://github.com/scoumbourdis/grocery-crud/blob/master/license-grocery-crud.txt
  * @version    	0.6
  * @author     	John Skoumbourdis <scoumbourdisj@gmail.com>
+ * @editor      Ujjwal Bera <ujjwal.test@gmail.com>
  */
 class MY_Output extends CI_Output {
   
