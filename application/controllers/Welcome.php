@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Welcome extends MY_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -21,28 +21,14 @@ class Welcome extends CI_Controller {
 
 	function __construct(){
 		parent::__construct();
-		$this->output->section('header','welcome/header');
-		$this->output->section('sidebar','welcome/sidebar');
-		$this->output->section('footer','welcome/footer');
-		$this->output->set_title('TSD Admin');
-		$this->output->set_template('admin');
+
 	}
 
 
 
 	public function index()
 	{
-		$this->output->append_title('Welcome');
-		$this->load->view('welcome/sample_view');
-	}
-
-	public function table(){
-		$this->output->append_title('Table');
-		$this->output->css('assets/themes/admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css');
-		$this->output->js('assets/themes/admin/bower_components/datatables.net/js/jquery.dataTables.min.js');
-		$this->output->js('assets/themes/admin/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js');
-		$this->load->view('welcome/sample_table');
-
+		$this->load->view('welcome_message');
 	}
 
 

@@ -13,7 +13,14 @@
  All the "**load**" for Templates will be replaced by "**output**". See the example bellow
  
  `$this->load->section()` is replaced by `$this->output->section()`
+# Update 12-03-18
 
+  - Form Validation Custom Callback Function problem fixed
+  - is_unique fixed.
+  - Example Module for a simple CRUD included  With database(**citemplate.sql** included) 
+  `application/modules/examples` 
+  
+  
 
 # Update 01-02-18
 
