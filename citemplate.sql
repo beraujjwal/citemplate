@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 12, 2018 at 10:41 AM
+-- Generation Time: Mar 12, 2018 at 10:52 AM
 -- Server version: 5.7.19
 -- PHP Version: 7.1.9
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `online_exam`
+-- Database: `citemplate`
 --
 
 -- --------------------------------------------------------
@@ -44,6 +44,33 @@ CREATE TABLE IF NOT EXISTS `ci_sessions` (
 INSERT INTO `ci_sessions` (`id`, `ip_address`, `timestamp`, `data`) VALUES
 ('1kjoid1rs26maeh8p9eknhsonnble43r', '202.142.96.32', 1519386165, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531393338363136353b),
 ('eo51jtgm6u9i16ve55ofo7dbu3d9dgqi', '202.142.96.32', 1519386380, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531393338363136353b);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `examples`
+--
+
+DROP TABLE IF EXISTS `examples`;
+CREATE TABLE IF NOT EXISTS `examples` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `details` text NOT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT '0',
+  `created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `modified` datetime DEFAULT NULL,
+  `created_by` int(11) NOT NULL DEFAULT '0',
+  `modified_by` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `examples`
+--
+
+INSERT INTO `examples` (`id`, `name`, `details`, `status`, `created`, `modified`, `created_by`, `modified_by`) VALUES
+(1, 'Example 1', 'Example 1', 1, '2018-02-19 20:19:17', '2018-02-26 18:16:45', 2, 2),
+(4, 'Example 2', 'This is a sample test', 1, '2018-02-26 18:16:33', NULL, 2, 0);
 
 -- --------------------------------------------------------
 
