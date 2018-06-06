@@ -1,12 +1,13 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: sunil
- * Date: 12-03-2018
- * Time: 03:57 PM
- */
+* Old class is can't user
+* fb.com/xuandung38
+* Having an error with the old code, I updated and corrected it by letting it inherit from CI_Form_validation
+**/
 
-class MY_Form_validation{
+Class MY_Form_validation extends CI_Form_validation
+
+{
     public $CI;
 
     /**
@@ -20,4 +21,5 @@ class MY_Form_validation{
             ? ($this->CI->db->limit(1)->get_where($table, array($field => $str))->num_rows() === 0)
             : FALSE;
     }
+
 }
