@@ -31,6 +31,7 @@
 # Contributors
   - [Ujjwal Bera](https://github.com/ujjwalbera)
   - [Sunil K Samanta](https://github.com/sunilthedj)
+  - [HXD](https://github.com/xuandung38)
 
 
 # Credits
